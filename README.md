@@ -1,12 +1,12 @@
 # Vue.JS-CodeHighlighter
 A simple code highlight render component based on highlight.js
 
-##Credits
+## Credits
 JS - [highlight.js](https://highlightjs.org/) (dependency)
 
 CSS - Atom One Dark by Daniel Gamage 
 
-##Usage
+## Usage
 Props: 
 * code - *String* - The code you wish to highlight
 * language - *String* - which language to highlight, **javascript** by default
