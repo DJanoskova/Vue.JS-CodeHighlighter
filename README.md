@@ -4,6 +4,8 @@ A simple code highlight render component based on highlight.js
 ## Credits
 JS - [highlight.js](https://highlightjs.org/) (dependency)
 
+```npm install highlight.js```
+
 CSS - Atom One Dark by Daniel Gamage 
 
 ## Usage
