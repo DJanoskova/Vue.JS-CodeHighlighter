@@ -29,7 +29,7 @@ export default {
   },
   computed: {
     customStyle () {
-      if (this.wrap) return 'white-space: normal;'
+      if (this.wrap) return 'white-space: pre-line;'
     }
   },
   mounted () {
