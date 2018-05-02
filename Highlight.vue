@@ -1,7 +1,7 @@
 <template>
   <pre>
-    <code ref="code" :class="language" :style="customStyle">
-      {{ code }}
+    <code ref="source" :class="language" :style="customStyle">
+      {{ source }}
     </code>
   </pre>
 </template>
@@ -11,7 +11,7 @@ import highlight from 'highlight.js'
 
 export default {
   props: {
-    code: String,
+    source: String,
     language: {
       type: String,
       default: 'javascript'
@@ -22,9 +22,10 @@ export default {
     }
   },
   methods: {
-    highlight () {
-      let code = this.$refs.code
-      if (code) highlight.highlightBlock(code)
+    highlightSource () {
+      let source = this.$refs.source
+      source.innerHTML = this.source
+      if (source) highlight.highlightBlock(source)
     }
   },
   computed: {
@@ -33,10 +34,10 @@ export default {
     }
   },
   mounted () {
-    this.highlight()
+    this.highlightSource()
   },
   updated () {
-    this.highlight()
+    this.highlightSource()
   }
 }
 </script>
